@@ -43,6 +43,25 @@ fun ReservaSportScreen() {
                 nombre = "Gimnasio Municipal Urbano",
                 deporte = "Básquetbol",
                 disponibilidad = prefsManager.obtenerEstadoCancha(3, "Disponible: ${obtenerHorarioOriginal(3)}")
+            ),
+            // Nuevas canchas para habilitar el scroll dinámico en la entrega:
+            Cancha(
+                id = 4,
+                nombre = "Estadio Recreativo Gran Avenida",
+                deporte = "Fútbol 7",
+                disponibilidad = prefsManager.obtenerEstadoCancha(4, "Disponible: ${obtenerHorarioOriginal(4)}")
+            ),
+            Cancha(
+                id = 5,
+                nombre = "Pádel Arena San Miguel",
+                deporte = "Tenis",
+                disponibilidad = prefsManager.obtenerEstadoCancha(5, "Disponible: ${obtenerHorarioOriginal(5)}")
+            ),
+            Cancha(
+                id = 6,
+                nombre = "Polideportivo Central Urbano",
+                deporte = "Básquetbol",
+                disponibilidad = prefsManager.obtenerEstadoCancha(6, "Disponible: ${obtenerHorarioOriginal(6)}")
             )
         )
     }
